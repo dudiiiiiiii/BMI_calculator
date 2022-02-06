@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container__header {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.container__box {
+  z-index: 5;
+  height: 40%;
+  width: 35%;
+  background: #fba73f;
+  background: linear-gradient(135deg, #fba73f 0%, #fc466b 100%);
+  box-shadow: 10px 16px rgba(0, 0, 0, 0.575);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.container__box__gender label, .container__box__height label, .container__box__weight label {
+  font-size: 1.5rem;
+  color: #380a18;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.container__box__height span, .container__box__weight span {
+  position: relative;
+  left: -10%;
+  color: grey;
+  font-size: 0.85rem;
+}
+.container__box__gender {
+  padding-bottom: 10px;
+  position: relative;
+}
+.container__box__gender input[type=radio] {
+  margin-left: 30px;
+  color: green;
+}
+.container__box__buttons {
+  margin-top: 20px;
+}
+.container__box__buttons #first {
+  position: relative;
+  left: -100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #70fc46;
+  height: 2rem;
+  width: 7rem;
+  font-weight: bold;
+}
+.container__box__buttons #first .text {
+  position: relative;
+  bottom: 7px;
+}
+.container__box__buttons #second {
+  position: relative;
+  left: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #70fc46;
+  height: 2rem;
+  width: 4rem;
+  font-weight: bold;
+}
+.container__res {
+  position: absolute;
+  top: 40%;
+  height: 40%;
+  width: 35%;
+  background: #fba73f;
+  background: linear-gradient(135deg, #fba73f 0%, #fc466b 100%);
+  box-shadow: 10px 16px rgba(0, 0, 0, 0.575);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  opacity: 0;
+}
+.container__res .head {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.container__res .head .result {
+  font-size: 3rem;
+  color: #51ff00;
+}
+.container__res button {
+  margin-top: 20px;
+  position: relative;
+  left: -30%;
+  border: none;
+  border-radius: 10px;
+  background-color: #70fc46;
+  height: 2rem;
+  width: 4rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
