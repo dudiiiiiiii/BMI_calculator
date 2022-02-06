@@ -30,6 +30,7 @@ body {
         justify-content: center;
         flex-direction: column;
         font-family: sans-serif;
+        position: relative;
 
         &__gender, &__height, &__weight {
             label{
@@ -58,16 +59,22 @@ body {
         }
 
         &__buttons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            bottom: 10%;
+            position: absolute;
             margin-top: 20px;
             #first {
-                position: relative;
-                left: -100%;
+                position: absolute;
+                left: 7%;
                 border: none;
                 border-radius: 10px;
                 background-color: rgb(112, 252, 70);
                 height: 2rem;
                 width: 7rem;
                 font-weight: bold;
+                bottom: 0;
 
                 .text {
                     position: relative;
@@ -76,8 +83,9 @@ body {
                 
             }
             #second {
-                position: relative;
-                left: 100%;
+                position: absolute;
+                left: 83%;
+                bottom: 0;
                 border: none;
                 border-radius: 10px;
                 background-color: rgb(112, 252, 70);
@@ -114,8 +122,9 @@ body {
 
         button {
             margin-top: 20px;
-            position: relative;
-            left: -30%;
+            position: absolute;
+            left: 8%;
+            bottom: 8%;
             border: none;
             border-radius: 10px;
             background-color: rgb(112, 252, 70);

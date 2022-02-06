@@ -31,6 +31,7 @@ body {
   justify-content: center;
   flex-direction: column;
   font-family: sans-serif;
+  position: relative;
 }
 .container__box__gender label, .container__box__height label, .container__box__weight label {
   font-size: 1.5rem;
@@ -53,25 +54,32 @@ body {
   color: green;
 }
 .container__box__buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  bottom: 10%;
+  position: absolute;
   margin-top: 20px;
 }
 .container__box__buttons #first {
-  position: relative;
-  left: -100%;
+  position: absolute;
+  left: 7%;
   border: none;
   border-radius: 10px;
   background-color: #70fc46;
   height: 2rem;
   width: 7rem;
   font-weight: bold;
+  bottom: 0;
 }
 .container__box__buttons #first .text {
   position: relative;
   bottom: 7px;
 }
 .container__box__buttons #second {
-  position: relative;
-  left: 100%;
+  position: absolute;
+  left: 83%;
+  bottom: 0;
   border: none;
   border-radius: 10px;
   background-color: #70fc46;
@@ -104,8 +112,9 @@ body {
 }
 .container__res button {
   margin-top: 20px;
-  position: relative;
-  left: -30%;
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
   border: none;
   border-radius: 10px;
   background-color: #70fc46;
